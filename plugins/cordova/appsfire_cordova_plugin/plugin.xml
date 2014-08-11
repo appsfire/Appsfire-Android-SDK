@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.appsfire.cordova"
+    version="1.0.4">
+
+    <name>Appsfire SDK Plugin</name>
+    <description>Cordova plugin for the Appsfire SDK</description>
+    <author>Emmanuel Marty</author>
+	<license>BSD</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/appsfire.js" name="AppsfireSDK">
+        <clobbers target="AppsfireSDK" />
+    </js-module>
+
+    <access origin="*" />
+
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*" >
+           <feature name="AppsfireSDK">
+              <param name="android-package" value="com.appsfire.cordova.CDVAppsfireSDK" />
+              <param name="onload" value="true" />
+           </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*" >
+           <uses-permission android:name="android.permission.INTERNET" />
+           <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+        <source-file src="src/android/CDVAppsfireSDK.java" target-dir="src/com/appsfire/cordova" />
+        <source-file src="src/android/afAdSdk.jar" target-dir="libs" framework="true" />
+    </platform>
+</plugin>

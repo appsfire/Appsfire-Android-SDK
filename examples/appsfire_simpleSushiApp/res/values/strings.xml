@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AFSushiApp</string>
+    <string name="dummy_content">Powered by Appsfire</string>
+    <string name="dummy_button">Show Sushi Interstitial Ad</string>    
+</resources>

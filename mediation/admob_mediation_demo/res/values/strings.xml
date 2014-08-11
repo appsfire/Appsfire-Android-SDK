@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AFAdmobDemo</string>
+    <string name="dummy_content">Powered by Appsfire</string>
+    <string name="dummy_button">Show Admob Interstitial Ad</string>    
+</resources>
