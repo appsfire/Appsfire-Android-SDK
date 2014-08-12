@@ -1,13 +1,13 @@
-Appsfire for Android
-====================
+Appsfire SDK for Android
+========================
 
-**Modified**: 2014-04-28  
-**SDK Version**: 2.0
+**Modified**: 2014-08-12
+**SDK Version**: 2.0.0
 
 ## Getting Started with Appsfire
 The Appsfire Android SDK is the cornerstone of the Appsfire network.
 
-It provides the functionalities for monetizing your mobile application: it facilitates inserting native mobile ads into you Android application using native Android APIs. You can choose one of our ad units (Sushi or Sashimi), or create a new custom ad format (based on the Sashimi Ad Unit). Be sure to read our [full documentation](http://docs.appsfire.com/sdk/androidi/integration-reference/Introduction).
+It provides the functionalities for monetizing your mobile application: it facilitates inserting native mobile ads into you Android application using native Android APIs. You can choose one of our ad units (Sushi or Sashimi), or create a new custom ad format (based on the Sashimi Ad Unit). Be sure to read our [full documentation](http://docs.appsfire.com/sdk/android/integration-reference/Introduction).
 
 It also helps you engage with your users by sending push and in-app notifications.
 
@@ -19,20 +19,23 @@ It also helps you engage with your users by sending push and in-app notification
 
 In order to get started, please be sure you've done the following:
 
-1. Registered on [Appsfire website](http://www.appsfire.com/) and accepted our Terms Of Services.
-2. Registered your app on our [Dashboard](http://dashboard.appsfire.com/) and generated an SDK key for your app.
-3. Grabbed our latest version of the Android SDK by downloading the SDK from our [Dashboard](http://dashboard.appsfire.com/app/doc).
-4. Please follow the installation explanation available on our [online documentation](http://docs.appsfire.com/sdk/android/integration-reference/).
+1. Registered on [Appsfire website](http://www.appsfire.com/) and accepted our Terms Of Use
+2. Registered your app on our [Dashboard](http://dashboard.appsfire.com/) and generated an SDK key for your app
+3. Grabbed our latest version of the SDK, either using CocoaPods, or downloading the SDK from our [Dashboard](http://dashboard.appsfire.com/app/doc)
+
+### Manual Install
+
+For manual install, please refer to our [online documentation](http://docs.appsfire.com/sdk/android/integration-reference/).
 
 ## Sample Application
-Included is a sample app to use as example and for help on Appsfire integration. This basic application allows users to test our different ad units (Monetization Features) and our Notification Wall / Feedback Form (Engagement Features).
+Included are samples apps to use as example and for help on Appsfire integration. These basic applications allow users to test our different ad units (Monetization Features) and our Notification Wall / Feedback Form (Engagement Features).
 
 ## Contact Us
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
 
-### Version 1.0
-**Release date**: November 21, 2013
+### Version 2.0.0
+**Release date**: August 12, 2014
 
 - Monetization SDK
