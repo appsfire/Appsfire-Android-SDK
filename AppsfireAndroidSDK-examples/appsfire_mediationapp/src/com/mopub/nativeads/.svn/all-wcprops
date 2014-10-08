@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads
+END
+ImageTaskManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ImageTaskManager.java
+END
+ImageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ImageService.java
+END
+NativeResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/NativeResponse.java
+END
+SpinningProgressView.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/SpinningProgressView.java
+END
+ImpressionTrackingManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ImpressionTrackingManager.java
+END
+BaseForwardingNativeAd.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/BaseForwardingNativeAd.java
+END
+UrlResolutionTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/UrlResolutionTask.java
+END
+ImageDiskTaskManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ImageDiskTaskManager.java
+END
+RequestParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/RequestParameters.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/Constants.java
+END
+NativeAdInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/NativeAdInterface.java
+END
+NativeViewHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/NativeViewHolder.java
+END
+NativeUrlGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/NativeUrlGenerator.java
+END
+AdapterHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/AdapterHelper.java
+END
+CustomEventNative.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/CustomEventNative.java
+END
+CustomEventNativeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/CustomEventNativeAdapter.java
+END
+MoPubCustomEventNative.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/MoPubCustomEventNative.java
+END
+NativeAdViewHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/NativeAdViewHelper.java
+END
+ImageDownloadTaskManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ImageDownloadTaskManager.java
+END
+MoPubNative.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/MoPubNative.java
+END
+NativeErrorCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/NativeErrorCode.java
+END
+ImageViewService.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ImageViewService.java
+END
+ViewBinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/nativeads/ViewBinder.java
+END

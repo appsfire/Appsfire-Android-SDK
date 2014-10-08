@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories
+END
+VastManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/VastManagerFactory.java
+END
+CustomEventInterstitialFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/CustomEventInterstitialFactory.java
+END
+CustomEventInterstitialAdapterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/CustomEventInterstitialAdapterFactory.java
+END
+MoPubViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/MoPubViewFactory.java
+END
+HttpClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/HttpClientFactory.java
+END
+VastVideoDownloadTaskFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/VastVideoDownloadTaskFactory.java
+END
+AdFetchTaskFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/AdFetchTaskFactory.java
+END
+HtmlBannerWebViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/HtmlBannerWebViewFactory.java
+END
+AdViewControllerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/AdViewControllerFactory.java
+END
+AdFetcherFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/AdFetcherFactory.java
+END
+MraidViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/MraidViewFactory.java
+END
+HtmlInterstitialWebViewFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/HtmlInterstitialWebViewFactory.java
+END
+CustomEventBannerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/CustomEventBannerFactory.java
+END
+ViewGestureDetectorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/ViewGestureDetectorFactory.java
+END
+CustomEventBannerAdapterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/factories/CustomEventBannerAdapterFactory.java
+END

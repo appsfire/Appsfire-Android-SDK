@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AFMediation</string>
+    <string name="default_status">SDK initializing...</string>
+    <string name="dummy_content">Appsfire Mediation</string>
+    <string name="interstitial_button">Show Interstitial Ad</string>    
+    <string name="banner_button">Show Banner Ad</string>    
+</resources>

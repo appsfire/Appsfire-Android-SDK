@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util
+END
+Mraids.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/Mraids.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/Utils.java
+END
+HttpClients.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/HttpClients.java
+END
+HttpResponses.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/HttpResponses.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/Base64.java
+END
+WebViews.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/WebViews.java
+END
+Interstitials.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/Interstitials.java
+END

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsfire.mediationexampleapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+    
+    <!-- for Appsfire, AdMob, MoPub -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- for MoPub and SmartAdServer -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />    
+    
+    <!-- for InMobi -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+    <!-- for Xaxis -->
+    <action android:name="android.intent.action.SCREEN_ON" />
+	<action android:name="android.intent.action.SCREEN_OFF" />
+	<action android:name="android.intent.action.PHONE_STATE"/>
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.CAMERA"/>	
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- for Admob -->
+        <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version"/>
+        
+        <activity
+            android:name="com.appsfire.mediationexampleapp.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- for Admob -->
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        
+        <!-- for MoPub -->
+        <activity android:name="com.mopub.mobileads.MoPubActivity" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.mopub.mobileads.MraidActivity" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.mopub.common.MoPubBrowser" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:configChanges="keyboardHidden|orientation"/>
+		<activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="keyboardHidden|orientation|keyboard" />
+        <activity android:name="com.millennialmedia.android.VideoPlayer" android:configChanges="keyboardHidden|orientation|keyboard" />               
+		
+        <!-- for Adcolony -->
+        <activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+        		  android:configChanges="keyboardHidden|orientation|screenSize"
+        		  android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
+        		  android:configChanges="keyboardHidden|orientation|screenSize"
+        		  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name="com.jirbo.adcolony.AdColonyBrowser"
+        		  android:configChanges="keyboardHidden|orientation|screenSize"
+        		  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        		
+        <!-- for InMobi -->
+        <activity android:name="com.inmobi.androidsdk.IMBrowserActivity"
+    			  android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
+    			  android:hardwareAccelerated="true" />
+        <receiver
+            android:name="com.inmobi.commons.analytics.androidsdk.IMAdTrackerReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- for Facebook -->
+        <activity android:name="com.facebook.ads.InterstitialAdActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize" />
+        
+        <!-- for Xaxis -->
+        <activity
+            android:name="com.xaxis.mobilesdk.XVideoInterstitialActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>        
+        <activity
+            android:name="com.xaxis.mobilesdk.ui.custom.XInAppBrowser"
+            android:configChanges="orientation|keyboardHidden|screenLayout|uiMode|screenSize" >
+        </activity>
+        <receiver android:name="com.xaxis.mobilesdk.receiver.HibernationBroadcast">
+         <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                   <action android:name="android.intent.action.SCREEN_OFF" />
+                   <action android:name="android.intent.action.PHONE_STATE"/>
+          </intent-filter>
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+		</application>
+</manifest>

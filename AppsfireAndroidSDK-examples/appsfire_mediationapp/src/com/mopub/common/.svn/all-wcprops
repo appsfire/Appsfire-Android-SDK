@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common
+END
+DiskLruCacheUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/DiskLruCacheUtil.java
+END
+DiskLruCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/DiskLruCache.java
+END
+BaseUrlGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/BaseUrlGenerator.java
+END
+HttpClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/HttpClient.java
+END
+AdUrlGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/AdUrlGenerator.java
+END
+HttpResponses.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/HttpResponses.java
+END
+MoPub.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/MoPub.java
+END
+CacheService.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/CacheService.java
+END
+DiskLruCacheStrictLineReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/DiskLruCacheStrictLineReader.java
+END
+MoPubBrowser.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/MoPubBrowser.java
+END
+DownloadResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/DownloadResponse.java
+END
+SharedPreferencesHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/SharedPreferencesHelper.java
+END
+LocationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/LocationService.java
+END
+GpsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/GpsHelper.java
+END
+DownloadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/DownloadTask.java
+END

@@ -1,0 +1,55 @@
+10
+
+dir
+391
+https://alpennec@appsfire.unfuddle.com/svn/appsfire_androidsdk/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/res
+https://alpennec@appsfire.unfuddle.com/svn/appsfire_androidsdk
+
+
+
+2014-10-06T14:56:57.099746Z
+386
+emmanuelmarty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b0b45838-f894-4ba2-b5a1-990d50d8ebd4
+
+values
+dir
+
+drawable-hdpi
+dir
+
+drawable-xxhdpi
+dir
+
+values-v11
+dir
+
+drawable-ldpi
+dir
+
+values-v14
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+

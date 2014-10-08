@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util
+END
+Dips.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Dips.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Utils.java
+END
+Files.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Files.java
+END
+Drawables.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Drawables.java
+END
+ResponseHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/ResponseHeader.java
+END
+Json.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Json.java
+END
+Numbers.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Numbers.java
+END
+Streams.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Streams.java
+END
+DateAndTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/DateAndTime.java
+END
+DeviceUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/DeviceUtils.java
+END
+VersionCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/VersionCode.java
+END
+IntentUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/IntentUtils.java
+END
+AsyncTasks.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/AsyncTasks.java
+END
+MoPubLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/MoPubLog.java
+END
+ManifestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/ManifestUtils.java
+END
+Strings.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Strings.java
+END
+Reflection.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Reflection.java
+END
+Views.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/common/util/Views.java
+END

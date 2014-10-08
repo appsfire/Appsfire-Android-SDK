@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast
+END
+XmlUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast/XmlUtils.java
+END
+VastCompanionAd.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast/VastCompanionAd.java
+END
+VastManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast/VastManager.java
+END
+VastXmlManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast/VastXmlManager.java
+END
+VastVideoConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast/VastVideoConfiguration.java
+END
+VastXmlManagerAggregator.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/appsfire_androidsdk/!svn/ver/386/builds/2.1.0_release_5412595/Appsfire-Android-SDK/AppsfireAndroidSDK-mediation/src/com/mopub/mobileads/util/vast/VastXmlManagerAggregator.java
+END
