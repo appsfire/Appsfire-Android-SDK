@@ -41,6 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
@@ -100,7 +101,20 @@ Public Types</h2></td></tr>
 &nbsp;&nbsp;<b>AFSDKErrorCodeAdDownloadCancelledByDeveloper</b> = (12,"Ad downloads cancelled midway!"), 
 <b>AFSDKErrorCodeAdWebServiceBadJSonReceived</b> = (13,"Bad JSon received from Appsfire webservices"), 
 <b>AFSDKErrorCodeAdDisplayError</b> = (14, "Internal error while displaying ad."), 
-<b>AFSDKErrorCodeAdDisplayBadURLError</b> = (15, "This AdSDK library navigates to specific urls only. %s wont work.")
+<b>AFSDKErrorCodeAdDisplayBadURLError</b> = (15, "This AdSDK library navigates to specific urls only. %s wont work."), 
+<br/>
+&nbsp;&nbsp;<b>AFSDKErrorCodeMediationRequestFailed</b> = (20,"The placement request failed."), 
+<b>AFSDKErrorCodeMediationAdPlacementIdNotValid</b> = (21,"The placement id is not valid."), 
+<b>AFSDKErrorCodeMediationPayloadNotValid</b> = (22,"The payload received for the placement id is not valid"), 
+<b>AFSDKErrorCodeMediationCustomClassNotFound</b> = (23,"The received custom class does not exist"), 
+<br/>
+&nbsp;&nbsp;<b>AFSDKErrorCodeMediationCustomClassNotConformToInterface</b> = (24,"The received custom class does not conform to protocol"), 
+<b>AFSDKErrorCodeMediationNoAds</b> = (25,"The received placement id does not have any ads to show"), 
+<b>AFSDKErrorCodeMediationAdRequestTimeout</b> = (26,"The ad request timed out"), 
+<b>AFSDKErrorCodeMediationInterstitialExpired</b> = (27,"The interstitial has expired, you need to create a new one"), 
+<br/>
+&nbsp;&nbsp;<b>AFSDKErrorCodeMediationInterstitialAlreadyUsed</b> = (28,"The interstitial has already been used, you need to create a new one"), 
+<b>AFSDKErrorCodeMediationBannerSizeMismatch</b> = (29,"The size of the banner does not fit the destination container view")
 <br/>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -109,11 +123,17 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a57256515f286a6730123929121346a28">isInitialized</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a347130bd5f731d39e3fefb70d256a32e">setAPIKey</a> (String apiKey)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#afa77cce3fc721e957c891a1c10374e7f">getAPIKey</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a35a96c8a57b624ecaa9fdde5e8f38105">setAPISecret</a> (String apiSecret)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#ab8e13c8a1c59b26adb781153f4ee6e45">getAPISecret</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a670d180338ea475cbe921ff2faa5c347">setDebugModeEnabled</a> (boolean use)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#aa4901db6a243a1e05c74da70856293c6">isDebugModeEnabled</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#af814837c7575095af2e29c052bc71674">setVerboseLoggingEnabled</a> (boolean use)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a8c6a18bbd73a740e3a828a527d73598f">isVerboseLoggingEnabled</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a49037e06818aea92a7b007d3fa5b72d0">setFeatures</a> (List&lt; <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#ac7153906f200262971d27011b714aea9">AFSDKFeature</a> &gt; features)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a9e994131abd8b53cd8d331a48b96adaf">setEventsDelegate</a> (<a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a> delegate)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#ae7bf04bdaf24ad89287a34ce7a47390a">getEventsDelegate</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a46f719ba06b6c8524ebbea1ee7de4bdf">addEventsDelegate</a> (<a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a> delegate)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#ae49221ec9c0dac509ceb4816942ac3de">removeEventsDelegate</a> (<a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a> delegate)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a7ac760195b1423abd5fad87edc5c0e58">setAppContext</a> (Context c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a5d7af43bcc5344268f2339e39c99acd5">prepare</a> (Context c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a5ce4c0ce01d3b84e6e3fa1b58f37e42d">onStart</a> (Context c)</td></tr>
@@ -220,6 +240,32 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a46f719ba06b6c8524ebbea1ee7de4bdf"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::addEventsDelegate" ref="a46f719ba06b6c8524ebbea1ee7de4bdf" args="(AFAdSDKEventsDelegate delegate)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a> com.appsfire.adUnitJAR.sdk.AFAdSDK.addEventsDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a>&nbsp;</td>
+          <td class="paramname"> <em>delegate</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Set an additional handler that will receive events and handle various interactions with the library</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>delegate</em>&nbsp;</td><td>instance of custom class (inherited from <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a>) that will handle the library events</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>this ad sdk instance </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a32c59d1b7eba7f7b572939e25446c68f"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::areAdsLoaded" ref="a32c59d1b7eba7f7b572939e25446c68f" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -275,6 +321,25 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Gets the API key you set for your app</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>API key </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8e13c8a1c59b26adb781153f4ee6e45"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::getAPISecret" ref="ab8e13c8a1c59b26adb781153f4ee6e45" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.appsfire.adUnitJAR.sdk.AFAdSDK.getAPISecret </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets the API secret you set for your app</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>API secret </dd></dl>
 
 </div>
 </div>
@@ -425,6 +490,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8c6a18bbd73a740e3a828a527d73598f"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::isVerboseLoggingEnabled" ref="a8c6a18bbd73a740e3a828a527d73598f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.appsfire.adUnitJAR.sdk.AFAdSDK.isVerboseLoggingEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Check if verbose logging is enabled or not, as set by <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#af814837c7575095af2e29c052bc71674">setVerboseLoggingEnabled()</a></p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if debug mode is enabled, false if not </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8e33e9f72e614dfdb4cad09c4512ab02"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::numberOfSashimiAdsAvailableForFormat" ref="a8e33e9f72e614dfdb4cad09c4512ab02" args="(AFAdSDKSashimiFormat format)" -->
 <div class="memitem">
 <div class="memproto">
@@ -563,6 +647,31 @@ Public Member Functions</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>view</em>&nbsp;</td><td>sashimi ad view to be cleaned up after removal </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae49221ec9c0dac509ceb4816942ac3de"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::removeEventsDelegate" ref="ae49221ec9c0dac509ceb4816942ac3de" args="(AFAdSDKEventsDelegate delegate)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.appsfire.adUnitJAR.sdk.AFAdSDK.removeEventsDelegate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html">AFAdSDKEventsDelegate</a>&nbsp;</td>
+          <td class="paramname"> <em>delegate</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Remove an event handler added with <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a46f719ba06b6c8524ebbea1ee7de4bdf">addEventsDelegate()</a></p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>delegate</em>&nbsp;</td><td>handler to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -715,6 +824,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a35a96c8a57b624ecaa9fdde5e8f38105"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::setAPISecret" ref="a35a96c8a57b624ecaa9fdde5e8f38105" args="(String apiSecret)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a> com.appsfire.adUnitJAR.sdk.AFAdSDK.setAPISecret </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>apiSecret</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sets your app's API secret to be used by the ad SDK</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>apiSecret</em>&nbsp;</td><td>API secret </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7ac760195b1423abd5fad87edc5c0e58"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::setAppContext" ref="a7ac760195b1423abd5fad87edc5c0e58" args="(Context c)" -->
 <div class="memitem">
 <div class="memproto">
@@ -821,6 +955,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af814837c7575095af2e29c052bc71674"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::setVerboseLoggingEnabled" ref="af814837c7575095af2e29c052bc71674" args="(boolean use)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html">AFAdSDK</a> com.appsfire.adUnitJAR.sdk.AFAdSDK.setVerboseLoggingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>use</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Specify whether the library should log verbose messages. When this mode, or debug mode, are enabled, verbose debug messages are logged to the console. This call should only be made during development when testing release mode; it should be removed when submitting your app to Google Play or other appstores</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>use</em>&nbsp;</td><td>true if verbose logging should be enabled, false if it should be disabled</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>this sdk instance </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a54f7ef9f389e12712d06577009bc13eb"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::unRegisterContext" ref="a54f7ef9f389e12712d06577009bc13eb" args="(Context c)" -->
 <div class="memitem">
 <div class="memproto">
@@ -864,7 +1024,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jul 31 2014 17:53:23 for Appsfire Android Java SDK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Sep 17 2014 12:31:46 for Appsfire Android Java SDK by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
