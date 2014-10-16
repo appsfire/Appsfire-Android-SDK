@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AFCarouselApp</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="notification_bar">Notification Bar</string>
+    <string name="notification_buttons">Notification Buttons</string>
+    <string name="persistent_overlay">Persistent Overlay</string>
+    <string name="custom_widget">Custom Notifications Widget</string>
+    <string name="checkformodalad">CheckForModalAd</string>
+    <string name="settings">Settings</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="backgrStr">AFFullSampleApp</string>
+    <string name="assets_aotd_gratis">aotdGratis.html</string>
+    <string name="assets_aotd_pricedrop">aotdPriceDrop.html</string>
+
+</resources>

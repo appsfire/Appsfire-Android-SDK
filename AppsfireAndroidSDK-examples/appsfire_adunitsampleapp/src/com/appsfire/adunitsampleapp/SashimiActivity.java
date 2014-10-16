@@ -24,7 +24,9 @@ import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
+import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,7 +34,7 @@ import android.widget.Toast;
 
 public class SashimiActivity extends Activity {
 	// Tag for logging messages
-	private static final String CLASS_TAG = "MainAdUnitActivity";
+	private static final String CLASS_TAG = "SashimiActivity";
 
 	// Ad sdk instance
 	private static AFAdSDK adSdk;
@@ -40,6 +42,7 @@ public class SashimiActivity extends Activity {
 	private ListView listView;
 	private SashimiListAdapter listAdapter;
 	private AFAdSDKSashimiView sashimiView;
+	private AFAdSDKCarouselSashimiView carouselView;
 	
     // Create activity
 	@Override
@@ -65,7 +68,7 @@ public class SashimiActivity extends Activity {
         listAdapter = new SashimiListAdapter (this);
         listView.setAdapter(listAdapter);
         
-		if (action == 2 || action == 3 || action == 4 || action == 5) {
+		if (action == 2 || action == 3 || action == 4 || action == 5 || action == 6) {
 			listView.setDivider(new ColorDrawable(0xFFFFFFFF));
 			listView.setDividerHeight(1);
 		}
@@ -211,6 +214,54 @@ public class SashimiActivity extends Activity {
 			}
 			break;
 				
+		case 6:
+			// Show carousel with Extended Sashimi ads
+			int nAdsForCarousel = adSdk.numberOfSashimiAdsAvailableForFormat(AFAdSDKSashimiFormat.AFAdSDKSashimiFormatExtended);
+			if (nAdsForCarousel != 0) {
+				removeSashimiView ();
+				
+				carouselView = new AFAdSDKCarouselSashimiView (this);
+				if (carouselView != null) {
+					ArrayList<AFAdSDKSashimiView> items = new ArrayList<AFAdSDKSashimiView>();
+					
+					for (int i = 0; i < nAdsForCarousel; i++) {
+						AFAdSDKSashimiView adView = adSdk.sashimiViewForFormat (AFAdSDKSashimiFormat.AFAdSDKSashimiFormatExtended, new AFAdSDK.AFAdSizeProvider () {
+							@Override
+							public AFAdSize provideSize() {
+								WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+								Display display = wm.getDefaultDisplay();
+								DisplayMetrics dm = new DisplayMetrics ();
+								AFAdSDK.AFAdSize size = new AFAdSDK.AFAdSize();
+								int nPageMargin;
+								
+								display.getMetrics (dm);
+								size.width = listView.getWidth();
+								if (dm.widthPixels > dm.heightPixels)
+									size.height = (int) ((Math.max (dm.widthPixels, dm.heightPixels) * 1.0) / 1.3f);
+								else
+									size.height = (int) ((Math.min (dm.widthPixels, dm.heightPixels) * 1.0) / 1.3f);
+								nPageMargin = Math.min((int) (size.width / 4), 200);
+								carouselView.setAdMargin(nPageMargin);
+								size.height = size.height * (size.width - nPageMargin) / size.width;
+								size.width = size.width - nPageMargin;
+								return size;
+							}
+						}, this);
+						
+						items.add(adView);
+					}
+					
+					findViewById (R.id.sashimiView).setBackgroundColor(0xff272727);					
+					carouselView.setLayoutParams(new AbsListView.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+					carouselView.setAdViewsArray(items);
+					
+	                Toast toastInstance = Toast.makeText (this, "Showing carousel...", Toast.LENGTH_SHORT);				                
+	                toastInstance.show ();																																	
+					insertCarouselView ();
+				}				
+			}
+			break;
+			
 		default:
 			break;
         }
@@ -282,6 +333,19 @@ public class SashimiActivity extends Activity {
         });
 	}
 	
+	private void insertCarouselView() {
+		runOnUiThread(new Runnable() {
+		    @Override
+		    public void run() {
+		    	// Refresh listview; the carousel will now appear in it
+				listAdapter.notifyDataSetChanged();
+				
+		    	// Scroll listview to the top, in case the user moved it while waiting for the ad to load
+		    	listView.setSelection(0);
+		    }
+		});		
+	}
+	
 	// Remove sashimi ad view
 	
 	private void removeSashimiView() {
@@ -289,6 +353,12 @@ public class SashimiActivity extends Activity {
 			// Free resources used by Sashimi
 			adSdk.releaseSashimiView (sashimiView);
 			sashimiView = null;
+			listAdapter.notifyDataSetChanged();
+		}
+		
+		if (carouselView != null) {
+			carouselView.releaseAdViews();
+			carouselView = null;
 			listAdapter.notifyDataSetChanged();
 		}
 	}
@@ -309,7 +379,7 @@ public class SashimiActivity extends Activity {
 		public int getCount() {
 			int nCount = rssItems.size();
 			
-			if (sashimiView != null)
+			if (sashimiView != null || carouselView != null)
 				nCount++;
 			return nCount;
 		}
@@ -319,13 +389,17 @@ public class SashimiActivity extends Activity {
 			View rowView = null;
 			int nCount = rssItems.size();
 			
-			if (sashimiView != null)
+			if (sashimiView != null || carouselView != null)
 				nCount++;
 			
 			if (position >= 0 && position < nCount) {
 				if (sashimiView != null && position == 2) {
 					// Show Sashimi in row #3
 					rowView = sashimiView;
+				}
+				else if (carouselView != null && position == 2) {
+					// Show carousel in row #3
+					rowView = carouselView;
 				}
 				else {
 					LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -334,6 +408,10 @@ public class SashimiActivity extends Activity {
 					
 					if (sashimiView != null && position > 2) {
 						// Below Sashimi row #3, shift position to get the right fake content for this row
+						position--;
+					}
+					else if (carouselView != null && position > 2) {
+						// Below carousel row #3, shift position to get the right fake content for this row
 						position--;
 					}
 					
@@ -345,6 +423,7 @@ public class SashimiActivity extends Activity {
 					switch (action) {
 					case 2:
 					case 5:
+					case 6:
 						// Dark style mode
 						textView.setBackgroundColor (0xff474747);
 						textView.setTextColor(Color.WHITE);
@@ -368,6 +447,8 @@ public class SashimiActivity extends Activity {
 				}
 			}
 			
+			rowView.setWillNotDraw(false);
+
 			return rowView;
 		}
 

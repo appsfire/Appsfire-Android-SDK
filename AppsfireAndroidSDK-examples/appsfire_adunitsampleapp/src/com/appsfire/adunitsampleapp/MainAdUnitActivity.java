@@ -60,6 +60,7 @@ public class MainAdUnitActivity extends Activity {
         "Show Minimal Sashimi (Custom Colors)",
         "Show Sashimi With Custom Subclass",
         "Show Extended Sashimi (Dark)",
+        "Show Sashimi Carousel"
     };
         
     // SDK statues displayed in the listview
@@ -253,6 +254,7 @@ public class MainAdUnitActivity extends Activity {
 						case 3:			
 						case 4:
 						case 5:
+						case 6:
 							// Show Sashimi
 							Log.d (CLASS_TAG, "show Sashimi activity");
 							Intent intent = new Intent(MainAdUnitActivity.this, SashimiActivity.class);
@@ -260,6 +262,7 @@ public class MainAdUnitActivity extends Activity {
 							b.putInt("action", childPosition);
 							intent.putExtras(b);
 							startActivity(intent);
+							break;
 						
 						default:
 							break;
