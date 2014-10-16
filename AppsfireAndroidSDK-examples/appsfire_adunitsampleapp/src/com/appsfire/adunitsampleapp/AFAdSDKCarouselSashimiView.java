@@ -1,6 +1,8 @@
 package com.appsfire.adunitsampleapp;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,8 +25,22 @@ import com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView;
 import com.appsfire.adUnitJAR.sdkimpl.AFSDKFactory;
 
 public class AFAdSDKCarouselSashimiView extends ViewPager {
+	/**
+	 * Effect applied to ad views when moving in and out of the carousel
+	 */
+	public enum AFAdSDKCarouselEffect {
+	    /** No effect */
+	    AFAdSDKCarouselEffectNone,
+	    
+	    /** Scale */
+	    AFAdSDKCarouselEffectScale,  
+	};
+	
 	// Tag for logging
 	private final static String CLASS_TAG = "AFAdSDKCarouselSashimiView";
+	
+	// Ads margin as set by the caller
+	private int mMargin;
 	
 	// Array of Sashimi ad views to show in the carousel
 	private ArrayList<AFAdSDKSashimiView> mAdViews = null;
@@ -37,6 +53,9 @@ public class AFAdSDKCarouselSashimiView extends ViewPager {
 	
 	// Timer for refreshing the carousel when releasing a drag
 	private Timer mRefreshTimer;
+	
+	// Effects applied to the carousel
+	private List<AFAdSDKCarouselEffect> mEffects = Arrays.asList(AFAdSDKCarouselEffect.AFAdSDKCarouselEffectScale);
 	
 	// START OF CAROUSEL INTERFACE
 	
@@ -59,6 +78,26 @@ public class AFAdSDKCarouselSashimiView extends ViewPager {
 	public AFAdSDKCarouselSashimiView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		mContext = context;
+	}
+	
+	/**
+	 * Set effects to apply to the carousel
+	 * 
+	 * @param effects new effects
+	 */
+	public void setEffects(List<AFAdSDKCarouselEffect> effects) {
+		boolean bCanScale = false;
+		
+		mEffects = effects;		
+		
+		// Update margin depending on whether we scale or not
+		for (AFAdSDKCarouselEffect effect: mEffects) {
+			if (effect == AFAdSDKCarouselEffect.AFAdSDKCarouselEffectScale) bCanScale = true;
+		}		
+		if (bCanScale)
+			setPageMargin(-mMargin/2);
+		else
+			setPageMargin(-mMargin/4);
 	}
 	
 	/**
@@ -166,9 +205,20 @@ public class AFAdSDKCarouselSashimiView extends ViewPager {
 	 */
 	
 	public void setAdMargin (int margin) {
+		boolean bCanScale = false;
+		
+		mMargin = margin;
 		setPadding(margin/2, 0, 0, 0);
 		setClipToPadding(false);
-		setPageMargin(-margin/2);		
+		
+		// Update margin depending on whether we scale or not
+		for (AFAdSDKCarouselEffect effect: mEffects) {
+			if (effect == AFAdSDKCarouselEffect.AFAdSDKCarouselEffectScale) bCanScale = true;
+		}		
+		if (bCanScale)
+			setPageMargin(-mMargin/2);
+		else
+			setPageMargin(-mMargin/4);
 	}
 	
 	// END OF CAROUSEL INTERFACE
@@ -302,22 +352,33 @@ public class AFAdSDKCarouselSashimiView extends ViewPager {
 	
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
-		// Smallest scaling factor that views are scaled down to when moving away
+		// Smallest scaling factor that ad are scaled down to, when moving away
 	    private static final float MIN_SCALE = 0.8f;
+	    
+	    // Smallest blending factor for ads that move away
+	    private static final float MIN_ALPHA = 0.5f;
 	 
 	    public void transformPage (View view, float position) {
 	        int pageWidth = view.getWidth();
 	        int pageHeight = view.getHeight();
+	        boolean bCanScale = false;
+	        float marginFraction = 0.5f * (float) mMargin / (float) view.getWidth();
 	 
+			// Check effects
+			for (AFAdSDKCarouselEffect effect: mEffects) {
+				if (effect == AFAdSDKCarouselEffect.AFAdSDKCarouselEffectScale) bCanScale = true;
+			}
+	        
+	        position -= marginFraction;
 	        if (position < -1) {
 	            // Offscreen to the left
-	            view.setScaleX(MIN_SCALE);
-	            view.setScaleY(MIN_SCALE);
+	            view.setScaleX(bCanScale ? MIN_SCALE : 1.0f);
+	            view.setScaleY(bCanScale ? MIN_SCALE : 1.0f);
 	            view.setAlpha(1);
 	        }
 	        else if (position <= 1) {
 	            // Scale views down as they move away from the center
-	            float scaleFactor = Math.max (MIN_SCALE, 1 - Math.abs(position/2));
+	            float scaleFactor = bCanScale ? (Math.max (MIN_SCALE, 1 - Math.abs(position/2))) : 1.0f;
 	            float vertMargin = pageHeight * (1 - scaleFactor) / 2;
 	            float horzMargin = pageWidth * (1 - scaleFactor) / 2;
 	            if (position < 0) {
@@ -327,19 +388,19 @@ public class AFAdSDKCarouselSashimiView extends ViewPager {
 	                view.setTranslationX (-horzMargin + vertMargin / 2);
 	            }
 	 
-	            // Scale the page down (between MIN_SCALE and 1)
+	            // Scale the ad as it moves in and out
 	            view.setScaleX(scaleFactor);
 	            view.setScaleY(scaleFactor);
-	 
-	            // Fade the page relative to its size.
-	            view.setAlpha(1);
+	            
+	            // Fade the ad as it moves in and out
+	            view.setAlpha(1);	 
 	        }
 	        else {
 	            // Offscreen to the right
-	            view.setScaleX(MIN_SCALE);
-	            view.setScaleY(MIN_SCALE);
+	            view.setScaleX(bCanScale ? MIN_SCALE : 1.0f);
+	            view.setScaleY(bCanScale ? MIN_SCALE : 1.0f);
 	            view.setAlpha(1);
-	        }
+	        }	        
 	    }
 	}
 }

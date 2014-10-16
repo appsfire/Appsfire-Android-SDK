@@ -15,9 +15,9 @@
      android:layout_centerHorizontal="true"
      android:layout_centerVertical="true"
      android:orientation="vertical"
-     android:paddingLeft="5dp"
+     android:paddingLeft="0dp"
      android:paddingTop="60dp"
-     android:paddingRight="5dp"
+     android:paddingRight="0dp"
      android:paddingBottom="5dp">
    				  
 		   <ListView

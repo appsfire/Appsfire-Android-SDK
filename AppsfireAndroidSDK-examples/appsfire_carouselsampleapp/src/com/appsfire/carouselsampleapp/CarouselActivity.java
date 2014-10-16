@@ -266,10 +266,10 @@ public class CarouselActivity extends Activity implements AFAdSDKEventsDelegate 
 						position--;
 					}
 					
-					Item item = mItems.get(position);					
+					Item item = mItems.get(position);	
 					textView.setText(Html.fromHtml("<b>"+item.getTitle()+"</b><br>"+item.getDescription()));
 					textView.setMaxLines(3);
-					textView.setEllipsize(TruncateAt.END);					
+					textView.setEllipsize(TruncateAt.END);
 				}
 			}
 			
