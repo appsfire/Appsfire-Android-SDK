@@ -39,7 +39,7 @@ If you encounter any issues, do not hesitate to contact our happy support team a
 ### Version 2.1.2
 **Release date**: October 30, 2014
 
-- Localize call to action button
+- Call to action buttons are now localized
 
 ### Version 2.1.1
 **Release date**: October 20, 2014
