@@ -1,9 +1,9 @@
 Appsfire SDK for Android
 ========================
 
-**Modified**: 2014-05-11
+**Modified**: 2014-07-11
 
-**SDK Version**: 2.1.3
+**SDK Version**: 2.1.4
 
 ## Getting Started with Appsfire
 The Appsfire Android SDK is the cornerstone of the Appsfire network.
@@ -36,6 +36,11 @@ If you encounter any issues, do not hesitate to contact our happy support team a
 
 ## Change Logs
 
+### Version 2.1.4
+**Release date**: November 7, 2014
+
+- Fix minor bug
+
 ### Version 2.1.3
 **Release date**: November 5, 2014
 
@@ -44,7 +49,7 @@ If you encounter any issues, do not hesitate to contact our happy support team a
 ### Version 2.1.2
 **Release date**: October 30, 2014
 
-- Call to action buttons are now localized
+- Localize call to action button
 
 ### Version 2.1.1
 **Release date**: October 20, 2014
