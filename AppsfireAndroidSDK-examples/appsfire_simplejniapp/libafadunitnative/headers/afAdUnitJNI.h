@@ -38,6 +38,7 @@ typedef enum {
    AFSDKEventModalAdDisplayed = 11,
    AFSDKEventModalAdPreDismiss = 12,
    AFSDKEventModalAdDismissed = 13,
+   AFSDKEventModalAdLeavingApplication = 14,
 } AfAdSDKEventType;
 
 /**

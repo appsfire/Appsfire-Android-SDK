@@ -80,4 +80,10 @@ public class AdUnitSampleAppEventsDelegate implements AFAdSDKEventsDelegate {
 		Log.i (CLASS_TAG,"onModalAdDismissed");
 		((MainAdUnitActivity)App.getSDK().getContext("MainAdUnitActivity")).setDisplayedAdSdkStatus(AdSDKStatus.requestedAnAd, false); // color back to red
 	}
+
+	@Override
+	public void onLeaveApplication() {
+		// Leaving application
+		Log.i (CLASS_TAG,"onLeaveApplication");
+	}
 }

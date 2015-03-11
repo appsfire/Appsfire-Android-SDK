@@ -151,5 +151,11 @@ public class MainActivity extends Activity {
 			// A modal ad has closed
 			Log.i (CLASS_TAG,"onModalAdDismissed");
 		}
+
+		@Override
+		public void onLeaveApplication() {
+			// Leaving application
+			Log.i (CLASS_TAG,"onLeaveApplication");
+		}
 	}
 }

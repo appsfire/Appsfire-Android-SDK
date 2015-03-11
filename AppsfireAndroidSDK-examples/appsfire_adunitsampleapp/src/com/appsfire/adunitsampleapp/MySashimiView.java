@@ -1,5 +1,6 @@
 package com.appsfire.adunitsampleapp;
 
+import com.appsfire.adUnitJAR.adUnit.Ad;
 import com.appsfire.adUnitJAR.adUnit.Ad.AFFlatAdType;
 import com.appsfire.adUnitJAR.sdk.AFAdSDK.AFAdSizeProvider;
 import com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView;
@@ -35,12 +36,11 @@ public class MySashimiView extends AFAdSDKSashimiView {
 	 * Constructor 
 	 *
 	 * @param context application context
-	 * @param adIconBitmap bitmap to use for ad icon
-	 * @param adScreenshotBitmap bitmap to use for ad screenshot
+	 * @param ad ad being presented
 	 * @param sizeProvider callback for the app to provide the size of the sashimi view
 	 */
-	public MySashimiView (Context context, AFAdSizeProvider sizeProvider) {
-        super(context, sizeProvider);
+	public MySashimiView (Context context, Ad ad, AFAdSizeProvider sizeProvider) {
+        super(context, ad, sizeProvider);
         
         m_context = context;
         m_styleMode = AFAdSDKSashimiStyleMode.AFAdSDKSashimiMinimalStyleModeLight;

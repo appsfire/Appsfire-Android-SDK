@@ -89,7 +89,7 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#a2f1aaaff1da48742347310f0d1494aee">AFAdSDKSashimiView</a> (Context context, <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_1_1_a_f_ad_size_provider.html">AFAdSizeProvider</a> sizeProvider)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#a42ca6573d3ff2650abca696b0178ebd7">AFAdSDKSashimiView</a> (Context context, Ad ad, <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_1_1_a_f_ad_size_provider.html">AFAdSizeProvider</a> sizeProvider)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ade40586701c3b90d2e5940194c646587">setOnAssetsReceivedListener</a> (<a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view_1_1_a_f_ad_s_d_k_0724d19a989e919ca17e77c73fa102a5.html">AFAdSDKSashimiAssetsReceivedListener</a> listener)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#af049aa44ba32abbd4a6d80ce1b1a3a4e">setOnDisplayListener</a> (<a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view_1_1_a_f_ad_s_d_k_sashimi_display_listener.html">AFAdSDKSashimiDisplayListener</a> listener)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#a251901d649b96ddab1c59e36cb796792">onAssetsReceived</a> (Bitmap adIconBitmap, Bitmap adScreenshotBitmap)</td></tr>
@@ -135,8 +135,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#aa1b7a4fe71476bef7f3d144d88f5d64a">getBlurRadius</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ab7e26aa148ad51d0b57c408bb1b2147f">setBlurRadius</a> (float fRadius)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#a8c5309fc47e4964555f3e45adf5e4b9e">internalCleanup</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a666d9bbc29f5e3521a1239c20e80a645"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getExtScreenshotAsBitmap" ref="a666d9bbc29f5e3521a1239c20e80a645" args="(float fBlurRadius, int dw, int dh)" -->
-Bitmap&nbsp;</td><td class="memItemRight" valign="bottom"><b>getExtScreenshotAsBitmap</b> (float fBlurRadius, int dw, int dh)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ab290bf7e3379184802e16b29992d523e">getIconURL</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; String &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#acc6b5362cf1cee2e15d21f40fb579f10">getScreenshotURLs</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ad72ae89c16d67508fe722b5a7662c164">getAppName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ad09a61c334eddc9693b85a23ee8d2f4c">getAppCategory</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ae50828a3e0209088274f8319d664c015">getAppTagline</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#a5dc42730a4147005709669ae01444008">getCallToActionButtonText</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Bitmap&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#a666d9bbc29f5e3521a1239c20e80a645">getExtScreenshotAsBitmap</a> (float fBlurRadius, int dw, int dh)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html#ade8506834448d2b5ac87879044b900da">onAdClicked</a> ()</td></tr>
@@ -223,7 +228,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2f1aaaff1da48742347310f0d1494aee"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::AFAdSDKSashimiView" ref="a2f1aaaff1da48742347310f0d1494aee" args="(Context context, AFAdSizeProvider sizeProvider)" -->
+<a class="anchor" id="a42ca6573d3ff2650abca696b0178ebd7"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::AFAdSDKSashimiView" ref="a42ca6573d3ff2650abca696b0178ebd7" args="(Context context, Ad ad, AFAdSizeProvider sizeProvider)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -232,6 +237,12 @@ Protected Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">Context&nbsp;</td>
           <td class="paramname"> <em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ad&nbsp;</td>
+          <td class="paramname"> <em>ad</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -251,6 +262,7 @@ Protected Member Functions</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>context</em>&nbsp;</td><td>application context </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ad</em>&nbsp;</td><td>ad being presented </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>sizeProvider</em>&nbsp;</td><td>instance of a AFAdSizeProvider that provides the size in pixels for this ad when created and when the screen size changes </td></tr>
   </table>
   </dd>
@@ -353,6 +365,63 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad09a61c334eddc9693b85a23ee8d2f4c"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getAppCategory" ref="ad09a61c334eddc9693b85a23ee8d2f4c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getAppCategory </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the advertised app's category</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>name </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad72ae89c16d67508fe722b5a7662c164"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getAppName" ref="ad72ae89c16d67508fe722b5a7662c164" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getAppName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the advertised app's name</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>name </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae50828a3e0209088274f8319d664c015"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getAppTagline" ref="ae50828a3e0209088274f8319d664c015" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getAppTagline </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the advertised app's tagline</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>tagline </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="afa9cfbbaa25773ce0d94b2aa6d681fe0"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getAssetDrawable" ref="afa9cfbbaa25773ce0d94b2aa6d681fe0" args="(AFAdSDKSashimiAssetBitmap asset)" -->
 <div class="memitem">
 <div class="memproto">
@@ -443,6 +512,25 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5dc42730a4147005709669ae01444008"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getCallToActionButtonText" ref="a5dc42730a4147005709669ae01444008" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getCallToActionButtonText </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the text displayed on the call to action button for this ad (</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>call to action button text, such as "DOWNLOAD" </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7d2651d146849cc07bd1341db39aa139"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getCategoryText" ref="a7d2651d146849cc07bd1341db39aa139" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -500,6 +588,49 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a666d9bbc29f5e3521a1239c20e80a645"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getExtScreenshotAsBitmap" ref="a666d9bbc29f5e3521a1239c20e80a645" args="(float fBlurRadius, int dw, int dh)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bitmap com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getExtScreenshotAsBitmap </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fBlurRadius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>dw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>dh</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get bitmap of this Sashimi ad</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fBlurRadius</em>&nbsp;</td><td>blur radius </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>dw</em>&nbsp;</td><td>width of the bitmap to create, in pixels </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>dh</em>&nbsp;</td><td>height of the bitmap to create, in pixels</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>bitmap </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa9465b4c150c23e51961a45e5535c6bb"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getFlatAdType" ref="aa9465b4c150c23e51961a45e5535c6bb" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -535,6 +666,25 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Get color for the border around the app's icon</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>border color </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab290bf7e3379184802e16b29992d523e"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getIconURL" ref="ab290bf7e3379184802e16b29992d523e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getIconURL </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the url of the advertised app's icon</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>url </dd></dl>
 
 </div>
 </div>
@@ -592,6 +742,25 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Get the color of the application's price</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>label color </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acc6b5362cf1cee2e15d21f40fb579f10"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKSashimiView::getScreenshotURLs" ref="acc6b5362cf1cee2e15d21f40fb579f10" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;String&gt; com.appsfire.adUnitJAR.sdk.AFAdSDKSashimiView.getScreenshotURLs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get the urls of the advertised app's screenshots</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>url </dd></dl>
 
 </div>
 </div>
@@ -1433,7 +1602,7 @@ Protected Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Oct 16 2014 16:52:16 for Appsfire Android Java SDK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 1 2015 19:12:53 for Appsfire Android Java SDK by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
