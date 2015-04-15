@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
@@ -62,16 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>com.appsfire.adUnitJAR.sdk.AFAdSDKEventsDelegate Interface Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate" --><div class="dynheader">
-Inheritance diagram for com.appsfire.adUnitJAR.sdk.AFAdSDKEventsDelegate:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.png" usemap="#com.appsfire.adUnitJAR.sdk.AFAdSDKEventsDelegate_map" alt=""/>
-  <map id="com.appsfire.adUnitJAR.sdk.AFAdSDKEventsDelegate_map" name="com.appsfire.adUnitJAR.sdk.AFAdSDKEventsDelegate_map">
-<area href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html" alt="com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent" shape="rect" coords="0,56,400,80"/>
-</map>
-</div>
-
+<!-- doxytag: class="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate" -->
 <p><a href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -87,6 +77,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">abstract void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html#a079b3fb920ace255108c18b36fccfc65">onModalAdFailedToDisplay</a> (AFAdSDKError errCode)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">abstract void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html#ac9da6588ad6d01bcd2f7bb28749d985f">onLeaveApplication</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">abstract void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html#a34a800559aeefaac7be1bf0b2a3baa18">onInStreamAdAvailable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">abstract void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_events_delegate.html#a8a2d3f005448f45265eda3146d65c79c">onNativeAdAvailable</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Event handlers called in your app by the ad sdk </p>
@@ -107,8 +98,6 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Inform the app that the ads information has been downloaded </p>
 
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#ae5dd854d9ed2a29c3d6885734ea9c0e2">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a2a375c169c6a3d7d7009db6bfb9372ce"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate::onAdUnitInitialized" ref="a2a375c169c6a3d7d7009db6bfb9372ce" args="()" -->
@@ -126,8 +115,6 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <p>Inform the app that the ads unit is initialized </p>
-
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#ab4cb0c24acce28f9b71f2775840ee78c">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
 
 </div>
 </div>
@@ -147,8 +134,6 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Inform the app that the ad sdk is initialized </p>
 
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a794775866e744ec6b34f838f9924d390">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a34a800559aeefaac7be1bf0b2a3baa18"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate::onInStreamAdAvailable" ref="a34a800559aeefaac7be1bf0b2a3baa18" args="()" -->
@@ -166,8 +151,6 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <p>Inform the app that ads are loaded and there is at least one in-stream ad available. The app can also poll for availability with AfAdSDK.numberOfSashimiAdsAvailableForFormat() </p>
-
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a037641838035e497bb4f12490ca16ffe">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
 
 </div>
 </div>
@@ -187,8 +170,6 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Inform the app that due to an ad being clicked, we are about to pause and open up the store </p>
 
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a1f81e0e67cc77b147df2412db00d9c37">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a4428750850cc39902d4e06d6afd500e0"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate::onModalAdAvailable" ref="a4428750850cc39902d4e06d6afd500e0" args="()" -->
@@ -206,8 +187,6 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <p>Inform the app that ads are loaded and there is at least one modal ad available. The app can also poll for availability with AfAdSDK.isThereAModalAdAvailable() </p>
-
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a23a0831b8042aa1a9c0fc544230f1af7">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
 
 </div>
 </div>
@@ -227,8 +206,6 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Inform the app that a modal ad is dismissed </p>
 
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a731f0e9c9fb83392607230e8598fbc2f">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aaa1f82ee8164e61668b48e0973d9271b"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate::onModalAdDisplayed" ref="aaa1f82ee8164e61668b48e0973d9271b" args="()" -->
@@ -246,8 +223,6 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <p>Inform the app that a modal ad is presented </p>
-
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#abac3225ad9fde1980f4218df277c9895">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
 
 </div>
 </div>
@@ -274,8 +249,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a3ace5044aa897dbed6620548c4313fee">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="adf318443dd4a2ca84378ebbd3e6740e9"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate::onModalAdPreDismiss" ref="adf318443dd4a2ca84378ebbd3e6740e9" args="()" -->
@@ -293,8 +266,6 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <p>Inform the app that a modal ad is about to be dismissed </p>
-
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a5bd3ab31a76cc23503c6f72bddb874a1">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
 
 </div>
 </div>
@@ -314,7 +285,23 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Inform the app that a modal ad is about to be presented </p>
 
-<p>Implemented in <a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1mediation_1_1_a_f_appsfire_interstitial_custom_event.html#a3174e9ad672661ac8dd0a3ae6733dbd3">com.appsfire.adUnitJAR.mediation.AFAppsfireInterstitialCustomEvent</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a8a2d3f005448f45265eda3146d65c79c"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDKEventsDelegate::onNativeAdAvailable" ref="a8a2d3f005448f45265eda3146d65c79c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void com.appsfire.adUnitJAR.sdk.AFAdSDKEventsDelegate.onNativeAdAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Inform the app that ads are loaded and there is at least one native ad available. The app can also poll for availability with AfAdSDK.numberOfNativeAdsAvailable() </p>
 
 </div>
 </div>
@@ -336,7 +323,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 1 2015 19:12:53 for Appsfire Android Java SDK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Apr 15 2015 10:47:24 for Appsfire Android Java SDK by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

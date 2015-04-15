@@ -1,9 +1,9 @@
 Appsfire SDK for Android
 ========================
 
-**Modified**: 2014-07-11
+**Modified**: 2015-04-15
 
-**SDK Version**: 2.1.4
+**SDK Version**: 2.3.0
 
 ## Getting Started with Appsfire
 The Appsfire Android SDK is the cornerstone of the Appsfire network.
@@ -35,6 +35,13 @@ Included are samples apps to use as example and for help on Appsfire integration
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+### Version 2.3.0
+**Release date**: April 15, 2015
+
+- Support for native ads (metadata-only ads)
+- Further sdk size reduction
+- Bugfixes
 
 ### Version 2.1.4
 **Release date**: November 7, 2014

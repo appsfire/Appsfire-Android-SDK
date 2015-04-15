@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&nbsp;List</span></a></li>
       <li><a href="classes.html"><span>Class&nbsp;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&nbsp;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&nbsp;Members</span></a></li>
     </ul>
   </div>
@@ -147,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html">AFAdSDKSashimiView</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#aadf040da96cd19b9c6e29468a4e1ca16">sashimiViewForFormat</a> (<a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#ab4ccbdbe0e323acd0fe344693dde9e5c">AFAdSDKSashimiFormat</a> format, <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_1_1_a_f_ad_size_provider.html">AFAdSizeProvider</a> sizeProvider, Context c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html">AFAdSDKSashimiView</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a3244c28d4e49d1e26671b457723083ab">sashimiViewForSubclass</a> (Class&lt;?&gt; subclass, <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_1_1_a_f_ad_size_provider.html">AFAdSizeProvider</a> sizeProvider, Context c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a132f6b38d84ad40321ad9cf8ba9db072">releaseSashimiView</a> (<a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k_sashimi_view.html">AFAdSDKSashimiView</a> view)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#af4e35ba315d9a5950a489cc57c75fb17">numberOfNativeAdsAvailable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_native_ad.html">AFNativeAd</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a15c7b99048659e609b47c5840bd3a1c5">nativeAd</a> (Context c)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a native ad.  <a href="#a15c7b99048659e609b47c5840bd3a1c5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a09f92c65f04e12cd6185fc5fa5e96911">registerContext</a> (Context c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#a54f7ef9f389e12712d06577009bc13eb">unRegisterContext</a> (Context c)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">Context&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#aff4c8356a83263e245a9aecf83154a92">getContext</a> (String contextClassName)</td></tr>
@@ -506,6 +508,52 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Check if verbose logging is enabled or not, as set by <a class="el" href="interfacecom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_ad_s_d_k.html#af814837c7575095af2e29c052bc71674">setVerboseLoggingEnabled()</a></p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if debug mode is enabled, false if not </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15c7b99048659e609b47c5840bd3a1c5"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::nativeAd" ref="a15c7b99048659e609b47c5840bd3a1c5" args="(Context c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1appsfire_1_1ad_unit_j_a_r_1_1sdk_1_1_a_f_native_ad.html">AFNativeAd</a> com.appsfire.adUnitJAR.sdk.AFAdSDK.nativeAd </td>
+          <td>(</td>
+          <td class="paramtype">Context&nbsp;</td>
+          <td class="paramname"> <em>c</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get a native ad. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>c</em>&nbsp;</td><td>application context</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A native ad, null if no native ad is available </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af4e35ba315d9a5950a489cc57c75fb17"></a><!-- doxytag: member="com::appsfire::adUnitJAR::sdk::AFAdSDK::numberOfNativeAdsAvailable" ref="af4e35ba315d9a5950a489cc57c75fb17" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.appsfire.adUnitJAR.sdk.AFAdSDK.numberOfNativeAdsAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Check the number of native ads currently ready for display</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>number of ads available </dd></dl>
 
 </div>
 </div>
@@ -1024,7 +1072,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 1 2015 19:12:53 for Appsfire Android Java SDK by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Apr 15 2015 10:47:24 for Appsfire Android Java SDK by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

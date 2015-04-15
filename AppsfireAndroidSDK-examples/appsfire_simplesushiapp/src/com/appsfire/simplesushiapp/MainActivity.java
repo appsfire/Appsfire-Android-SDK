@@ -123,6 +123,12 @@ public class MainActivity extends Activity {
 		}
 			
 		@Override
+		public void onNativeAdAvailable() {
+			// One or more native ads are available
+			Log.i (CLASS_TAG, "onNativeAdAvailable");
+		}
+			
+		@Override
 		public void onModalAdPreDisplay() {
 			// A modal ad is about to display
 			Log.i (CLASS_TAG,"onModalAdPreDisplay");
